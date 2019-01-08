@@ -43,7 +43,9 @@ O  = "\033[33m";
 B  = "\033[34m";
 
 
-header(){	
+
+# Banner
+def logo():	
  printf "    ${LIGHTGREEN} $$$$$$$$$$           $$$$$$$  $$$$$$$$$$$  ${NC}
  printf "    ${LIGHTGREEN} $$$$$$$$$$$         $$$$$$$$ $$$$$$$$$$$$$ ${NC}
  printf "    ${LIGHTGREEN} $$$$$$$$$$$$       $$$$       $$$$$$$$$$$  ${NC}
@@ -61,9 +63,6 @@ header(){
  printf "    ${LIGHTGREEN} $$$$              $$$             $$$      ${NC}
  printf "    ${LIGHTGREEN} $$$$               $$$$$$$$$$     $$$      ${NC}
  printf "    ${LIGHTGREEN} $$$$                 $$$$$$$$$    $$$      ${NC}
-}
-clear
-header
 
 if sys.platform == 'linux' or sys.platform == 'linux2':
   subprocess.call("clear", shell=True)
