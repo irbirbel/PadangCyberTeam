@@ -46,7 +46,7 @@ B  = "\033[34m";
 
 # Banner
 def logo():
-	print R+"\n|##########################################################################################|"
+	print R+"\n|#########################################################################################|"
 	print "| 				$$$$$$$$$$$         $$$$$$$$ $$$$$$$$$$$$$               |"
 	print "| 				$$$$$$$$$$$$       $$$$       $$$$$$$$$$$          	 |"
 	print "| 				$$$$      $$$$    $$$             $$$              	 |"
@@ -64,8 +64,8 @@ def logo():
 	print "| 				$$$$               $$$$$$$$$$     $$$              	 |"
         print "|                                                          			   	 |"
         print "| 			Tn.IrBirbel ID.py  - a modified Padang Cyber Team.py      	 |"
-        print "| 			01/2019            - v.0.1                                	 |"
-        print "|                                                                                         |"
+        print "| 			01/2019            - v.0.1                                	|"
+        print "|                                                                                        |"
         print "|     		        IrBirbel       - tepot.3003@gmail.com                     	 |"
         print "|                        ./Mr.Sk486     - irsyahdunas@gmail.com                    	 |"
         print "|                        Mr.Roberts     - kalempo123@gmail.com                     	 |"
