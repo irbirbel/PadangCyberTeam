@@ -82,13 +82,13 @@ else:
   subprocess.call("cls", shell=True)
   logo()
   
-log = "v3n0m-sqli.txt"
+log = "Tn.IrBirbel ID-sqli.txt"
 logfile = open(log, "a")
-lfi_log = "v3n0m-lfi.txt"
+lfi_log = "Tn.IrBirbel ID-lfi.txt"
 lfi_log_file = open(lfi_log, "a")
-rce_log = "v3n0m-rce.txt"
+rce_log = "Tn.IrBirbel ID-rce.txt"
 rce_log_file = open(rce_log, "a")
-xss_log = "v3n0m-xss.txt"
+xss_log = "Tn.IrBirbel ID-xss.txt"
 xss_log_file = open(xss_log, "a")
 
 arg_end = "--"
