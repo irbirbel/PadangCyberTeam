@@ -460,7 +460,7 @@ while menu == True:
     darkurl = []
 
     print W
-    sites = raw_input("\nChoose your target(domain)   : ")
+    sites = raw_input("\nTarget Lu Taik(domain)   : ")
     sitearray = [ sites ]
 
     go = []
