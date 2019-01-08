@@ -45,24 +45,27 @@ B  = "\033[34m";
 
 
 # Banner
-def logo():	
- printf "    ${LIGHTGREEN} $$$$$$$$$$           $$$$$$$  $$$$$$$$$$$  ${NC}
- printf "    ${LIGHTGREEN} $$$$$$$$$$$         $$$$$$$$ $$$$$$$$$$$$$ ${NC}
- printf "    ${LIGHTGREEN} $$$$$$$$$$$$       $$$$       $$$$$$$$$$$  ${NC}
- printf "    ${LIGHTGREEN} $$$$      $$$$    $$$             $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$      $$$$$  $$$              $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$        $$$ $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$       $$$$ $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$      $$$$  $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$     $$$$   $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$$$$$$$$$    $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$$$$$$$$     $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$            $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$            $$$               $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$             $$$              $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$              $$$             $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$               $$$$$$$$$$     $$$      ${NC}
- printf "    ${LIGHTGREEN} $$$$                 $$$$$$$$$    $$$      ${NC}
+def logo():
+print R+"\n|---------------------------------------------------------------|
+ print "    ${LIGHTGREEN} $$$$$$$$$$$         $$$$$$$$ $$$$$$$$$$$$$ ${NC}
+ print "    ${LIGHTGREEN} $$$$$$$$$$$$       $$$$       $$$$$$$$$$$  ${NC}
+ print "    ${LIGHTGREEN} $$$$      $$$$    $$$             $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$      $$$$$  $$$              $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$        $$$ $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$       $$$$ $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$      $$$$  $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$     $$$$   $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$$$$$$$$$    $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$$$$$$$$     $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$            $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$            $$$               $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$             $$$              $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$              $$$             $$$      ${NC}
+ print "    ${LIGHTGREEN} $$$$               $$$$$$$$$$     $$$      ${NC}
+ print "                            Padang Cyber Team
+ print "                             copyright 2k19                      "
+ print "|----------------------------------------------------------------|\n"
+ print W
 
 if sys.platform == 'linux' or sys.platform == 'linux2':
   subprocess.call("clear", shell=True)
