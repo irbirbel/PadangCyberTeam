@@ -26,9 +26,9 @@
 # This was written for educational purpose and pentest only. Use it at your own risk.
 # Author will be not responsible for any damage!
 # !!! Special greetz for my friend Padang Cyber Team !!!
-# Toolname        : Tn.IrBirbel ID
+# Toolname        : SQL Injection
 # Coder           : Tn.IrBirbel ID < tepot.3003@gmail.com>
-# Version         : 1.0
+# Version         : 1.1
 # greetz for all members of ex Padang Cyber Team and Fr13ndSh!t
 #
 
