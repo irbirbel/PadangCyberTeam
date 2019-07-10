@@ -493,8 +493,8 @@ while menu == True:
 
 
 
-    numthreads = raw_input('\nEnter no. Threads : ')
-    maxc = raw_input('Enter no. Pages   : ')
+    numthreads = raw_input('\nMasukan no: ')
+    maxc = raw_input('Enter ke Page : ')
     print "\nNomer  SQL errors :",len(sqlerrors)
     print "Nomer  LFI paths  :",len(lfis)
     print "Nomer  XSS cheats :",len(xsses)
@@ -509,7 +509,7 @@ while menu == True:
     new = 0
 
 
-  print R+"\n[1] SQLi Test"
+  print R+"\n[1]  SQLi Test"
   print "[2]  SQLi Mode Auto Test"
   print "[3]  LFI - RCE Test"
   print "[4]  XSS Test"
