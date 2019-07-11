@@ -56,6 +56,9 @@
 #  $$$$$$                    $$$$$$  $$ $$   $$ $$      $$  $$   $$ $$     $$ $$            $$ $$ $$     $$
 #  $$$$$$                    $$$$$$  $$ $$   $$ $$$$$$$$$    $$$$$  $$     $$ $$$$$$$  $$$$$$  $$ $$     $$
 
+import string, sys, time, urllib2, cookielib, re, random, threading, socket, os, subprocess
+from random import choice
+
 if sys.platform == 'linux' or sys.platform == 'linux2':
   subprocess.call("clear", shell=True)
   logo()
