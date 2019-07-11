@@ -56,7 +56,7 @@ def logo():
 #  $$$$$$                    $$$$$$  $$ $$   $$ $$       $$ $$   $$ $$     $$ $$            $$ $$ $$$$$$$$$
 #  $$$$$$                    $$$$$$  $$ $$   $$ $$      $$  $$   $$ $$     $$ $$            $$ $$ $$     $$
 #  $$$$$$                    $$$$$$  $$ $$   $$ $$$$$$$$$    $$$$$  $$     $$ $$$$$$$  $$$$$$  $$ $$     $$
-print w
+print W
 
 import string, sys, time, urllib2, cookielib, re, random, threading, socket, os, subprocess
 from random import choice
