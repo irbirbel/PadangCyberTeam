@@ -32,6 +32,7 @@
 # greetz for all members of ex anonymous all indonesia
 # Banner
 def logo():
+	print R+"SQL-Injection"
 #       $$$$$$$$$$$$$$$$$$$$$$
 #      $$$$$$$$$$$$$$$$$$$$$$$$
 #     $$$$$$              $$$$$$     $$$$$   $$$$$   $$$$$  $$      $$  $$$$     $$$$  $$$$$  $$   $$  $$$$$
