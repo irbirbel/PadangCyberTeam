@@ -46,8 +46,8 @@ B  = "\033[34m";
 
 # Banner
 def logo():
-	print G+"\n|#######################################################################################################|"
-	     print "|                                                                                                           |"
+	 print R+"\n|#######################################################################################################|"
+	 print "|                                                                                                           |"
          print "|                                                                                                           |"
          print "|    $$$$$$$$$$$$$$$$$$$$$$                                                                                 |"
          print "|   $$$$$$$$$$$$$$$$$$$$$$$$                                                                                |"
@@ -73,12 +73,12 @@ def logo():
          print "|$$$$$$                    $$$$$$  $$ $$   $$ $$       $$ $$   $$ $$     $$ $$            $$ $$ $$$$$$$$$   |"
          print "|$$$$$$                    $$$$$$  $$ $$   $$ $$      $$  $$   $$ $$     $$ $$            $$ $$ $$     $$   |"
          print "|$$$$$$                    $$$$$$  $$ $$   $$ $$$$$$$$$    $$$$$  $$     $$ $$$$$$$  $$$$$$  $$ $$     $$   |"
-	     print "|                                                                                                           |"
-	     print "|                                                                                                           |"
-		 print "|                                       Coded By Sultan_IrBirbel                                            |"
-		 print "|     Thanks to : IndoXcodeR - IndoXploit - Binus Hacker - Padang Cyber Team - Anonymous All Indonesia      |"
-	     print "|###########################################################################################################|\n"
-	print W
+	 print "|                                                                                                           |"
+	 print "|                                                                                                           |"
+	 print "|                                       Coded By Sultan_IrBirbel                                            |"
+	 print "|     Thanks to : IndoXcodeR - IndoXploit - Binus Hacker - Padang Cyber Team - Anonymous All Indonesia      |"
+	 print "|###########################################################################################################|\n"
+	 print W
 
                 
                 
