@@ -1,12 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Tn.IrBirbel ID.py - a modified -Padang Cyber Team-
+#      IrBirbel.py - a modified -Anonymous All Indonesia
 #    - added superlarge Dork list
 #    - added new headers
 #    - added lots of new XSS detectors
 #   
 #
-# Tn.IrBirbel ID.py - a -Padang Cyber Team-
+#     IrBirbel.py - a -Anonymous All Indonesia
 #   - added dork array
 #   - added input for number of random dorks
 #   - added bugfix for over tor (it crashed alot over tor)
@@ -16,20 +16,20 @@
 #   - added Column Finder
 #   - added column and table fuzzer
 #
-# rewrite done by Tn.IrBirbel ID
-# Column Finder added by Tn.IrBirbel ID
-# Fuzzer added by Tn.IrBirbel ID
+# rewrite done by IrBirbel
+# Column Finder added by IrBirbel
+# Fuzzer added by IrBirbel
 # mad propz to the original author for making a nice script that was easily modified!!!!
 #
 # original header:
 #
 # This was written for educational purpose and pentest only. Use it at your own risk.
 # Author will be not responsible for any damage!
-# !!! Special greetz for my friend Padang Cyber Team !!!
+# !!! Special greetz for my friend Anonymous All Indonesia !!!
 # Toolname        : SQL Injection
-# Coder           : Tn.IrBirbel ID < tepot.3003@gmail.com>
-# Version         : 1.1
-# greetz for all members of ex Padang Cyber Team and Fr13ndSh!t
+# Coder           : IrBirbel < admin@e-egift.id>
+# Version         : 1.0
+# greetz for all members of ex Anonymous All Indonesia
 #
 
 import string, sys, time, urllib2, cookielib, re, random, threading, socket, os, subprocess
